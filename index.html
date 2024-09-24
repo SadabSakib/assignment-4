@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" id="content" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +17,11 @@
 
 </head>
 <body class="lexend-fonts">
-    
-        <header class="md:w-[85%] mx-auto ">
+    <div id="pop-up-bg">   
+        <header class="md:w-[85%] mx-auto sticky top-0">
             <div class="navbar bg-base-100 ">
               <div class="navbar-start w-[40%]">
-                <a class="btn rounded-lg bg-[#B4F461] px-[32px] py-[12px]" href="blog.html" target="_blank">Blog</a>
+                <a href="blog.html" target="_blank" class="btn rounded-lg bg-[#B4F461] px-[32px] py-[12px]" href="blog.html" target="_blank">Blog</a>
               </div>
               <div class="flex items-center justify-center gap-2">
                 <img src="assets/logo.png" alt="" class="w-[48px] h-[48px]" />
@@ -34,7 +34,7 @@
             </div>
          
      
-            <div class="flex justify-center items-center gap-3">
+            <div class="flex justify-center items-center gap-3 ">
                 <div class="">
                     <button class="btn rounded-lg bg-[#B4F461] px-[32px] py-[12px]" id="donation-section-btn">Donation</button>
                   </div>
@@ -133,14 +133,24 @@
                             </div>
                     </div>
     </div>
-
-               
-                
-            </div>
-          </main>
+</main>
+</div>
     <div id="history-part" class="hidden" >
-    
+        
     </div>
+
+</div>
+  <div id="pop-up" class="hidden p-6  left-1/2 top-1/2 fixed bg-white">
+   <h1>Congrates</h1>
+   <img src="assets/coin.png" alt="">
+   <p>You have donated for humankind</p>
+   <h2>
+    Successfully
+   </h2>
+   <button>
+    Close confirmation
+   </button>
+  </div>
       <script src="donate.js"></script>
       <script src="section-swip.js"></script>
 </body>
