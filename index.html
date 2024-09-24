@@ -123,7 +123,7 @@
                                     <input  class=" input input-bordered placeholder:font-medium mt-[20px]" placeholder="Write Donation Amount" />
                                     <!-- <div class="btn bg-[#B4F461] text-center mt-[20px]"> -->
                  <!-- The button to open modal -->
-  <label for="my_modal_6" class="btn  " ><button class="donation-btn " type="submit">hkjkjk</button></label>
+  <label for="my_modal_6" id="jk" class="btn " onclick="something()" >iuoioioio</label>
 
 <!-- Put this part before </body> tag -->
 <input type="checkbox" id="my_modal_6" class="modal-toggle" />
@@ -233,6 +233,12 @@
           event.preventDefault();
 
         }
+      </script>
+      <script>
+        document.getElementById('jk').addEventListener('click',(e)=>{
+        //    e.preventDefault()
+           e.target.parentNode.children[0].children[1].innerText=parseFloat(e.target.parentNode.children[3].value)+parseFloat(e.target.parentNode.children[0].children[1].innerText)+" BDT"
+        })
       </script>
 </body>
 </html>
