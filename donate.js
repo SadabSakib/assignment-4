@@ -21,10 +21,10 @@ for(const btn of btns){
       const htwo=document.createElement('h1')
       const paragraph=document.createElement('p')
       htwo.innerText=e.target.parentNode.children[3].value+' tk Donated for '+e.target.parentNode.children[1].children[0].innerText;
-      document.body.classList.add('opacity-50');
-      document.getElementById('pop-up').classList.remove('hidden')
-      document.body.classList.add('block')
-      // document.getElementById('pop-up').classList.add('bg-opacity-10')
+      // document.body.classList.add('opacity-50');
+      // document.getElementById('pop-up').classList.remove('hidden')
+      // // document.body.classList.add('block')
+      // document.getElementById('pop-up-bg').classList.add('opacity-50','block')
       // document.getElementsByTagName('body').classList.add('block')
       paragraph.innerHTML="Date: "+new Date().toString()
       div.appendChild(htwo)
