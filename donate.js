@@ -24,7 +24,7 @@ for(const btn of btns){
       // paragraph.innerHTML="ijijkjkjkj"
       div.appendChild(htwo)
       div.appendChild(paragraph)
-      
+
       document.getElementById('history-part').appendChild(div)
     } else{
       alert('dbfgd')
