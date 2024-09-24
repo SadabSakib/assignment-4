@@ -18,18 +18,20 @@ for(const btn of btns){
       e.target.parentNode.children[0].children[1].innerText=parseFloat(e.target.parentNode.children[3].value)+parseFloat(e.target.parentNode.children[0].children[1].innerText)+" BDT"
       document.getElementById('available-amount').innerText=parseFloat(document.getElementById('available-amount').innerText)-parseFloat(e.target.parentNode.children[3].value)
       const div=document.createElement('div')
-      const htwo=document.createElement('h2')
+      const htwo=document.createElement('h1')
       const paragraph=document.createElement('p')
-      paragraph.innerText=e.target.parentNode.children[3].value+' tk Donated for '+e.target.parentNode.children[1].children[0].innerText
-      // paragraph.innerHTML="ijijkjkjkj"
+      htwo.innerText=e.target.parentNode.children[3].value+' tk Donated for '+e.target.parentNode.children[1].children[0].innerText;
+      paragraph.innerHTML="Date: "+new Date().toString()
       div.appendChild(htwo)
       div.appendChild(paragraph)
-
-      document.getElementById('history-part').appendChild(div)
+      htwo.classList.add("text-2xl","font-bold")
+      div.classList.add("p-5","border-2")
+      const divContainer=document.createElement('div')
+      divContainer.classList.add("p-7")
+      divContainer.appendChild(div)
+      document.getElementById('history-part').appendChild(divContainer)
     } else{
-      alert('dbfgd')
+      alert('dbfgd') 
     }
-    
     })
-console.log(btn)
 }
