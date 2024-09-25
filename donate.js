@@ -15,6 +15,27 @@ for(const btn of btns){
     //  e.target.parentNode.parentNode.children[1].innerTexr= e.target.parentNode.children[0].children[1].innerText
     if(!isNaN(e.target.parentNode.children[3].value) && parseFloat(e.target.parentNode.children[3].value)>0){
       e.preventDefault()
+//       document.body.innerHTML=`<input type="checkbox" id="my_modal_6" class="modal-toggle" />
+// <div class="modal" role="dialog">
+//   <div class="modal-box">
+//     <h3 class="text-lg font-bold">Hello!</h3>
+//     <p class="py-4">This modal works with a hidden checkbox!</p>
+//     <div class="modal-action">
+//       <label for="my_modal_6" class="btn">Close!</label>
+//     </div>
+//   </div>
+// </div>`
+openModalButton.addEventListener('click', () => {
+  modal.showModal();
+});
+
+closeModalButton.addEventListener('click', () => {
+  modal.close();
+});
+
+
+
+
       e.target.parentNode.children[0].children[1].innerText=parseFloat(e.target.parentNode.children[3].value)+parseFloat(e.target.parentNode.children[0].children[1].innerText)+" BDT"
       document.getElementById('available-amount').innerText=parseFloat(document.getElementById('available-amount').innerText)-parseFloat(e.target.parentNode.children[3].value)
       const div=document.createElement('div')
