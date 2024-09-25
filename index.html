@@ -16,24 +16,13 @@
     
 
 </head>
-
-<!-- {/* Put this part before </body> tag */} -->
-<!-- <div className="modal" role="dialog" id="my_modal_8">
-  <div className="modal-box">
-    <h3 className="text-lg font-bold">Hello!</h3>
-    <p className="py-4">This modal works with anchor links</p>
-    <div className="modal-action">
-      <a href="#" className="btn">Yay!</a>
-    </div>
-  </div>
-</div> -->
 <body class="lexend-fonts">
     <div id="pop-up-bg"  >  
       <div> 
         <header class="md:w-[85%] mx-auto sticky top-0 backdrop-blur-sm ">
             <div class="navbar bg-base-100 ">
               <div class="navbar-start w-[40%]">
-                <a href="blog.html" target="_blank" class=" btn rounded-lg bg-[#B4F461] px-[32px] py-[12px]" href="blog.html" target="_blank">Blog</a>
+                <a href="blog.html" id="Home-btn" class=" btn rounded-lg bg-[#B4F461] px-[32px] py-[12px]">Blog</a>
               </div>
               <div class="flex items-center justify-center gap-2">
                 <img src="assets/logo.png" alt="" class="w-[48px] h-[48px]" />
@@ -79,25 +68,11 @@
                             <h2 class="font-semibold text-lg">Donate for<span> Flood at Noakhali, Bangladesh</span></h2>
                             <p class="text-lg font-extralight mt-[20px]">
                                 The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution, <br> big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.
-                            </p> 
-                            
-                               <!-- Open the modal using ID.showModal() method -->
-                               <!-- {/* You can open the modal using document.getElementById('ID').showModal() method */} -->
-                             <!-- Trigger Button -->
+                            </p>
 
-<input  class=" input input-bordered placeholder:font-medium mt-[20px]" placeholder="Write Donation Amount" id="donation-btn"/>
-<!-- <div class="btn bg-[#B4F461] text-center mt-[20px]"> -->
-<!-- The button to open modal -->
-<!-- <button id="b" class="donation-btn rounded-lg border-none btn bg-[#B4F461] text-center mt-[20px]  px-[32px] py-[12px]">Donate Now</button> -->
-<button id="openModal" type="submit" class="px-4 py-2 text-white bg-[#B4F461] rounded donation-btn">Donate Now</button>
-
-<!-- Modal -->
-
-
-                                <!-- <div class="btn bg-[#B4F461] text-center mt-[20px]"> -->
-                            
-                                <!-- </div> -->
-                            </form>
+            <input  class=" input input-bordered placeholder:font-medium mt-[20px]" placeholder="Write Donation Amount" id="donation-btn"/>
+<button id="openModal" type="submit" class="px-4 mx-auto w-1/4 py-2 text-white bg-[#B4F461] rounded donation-btn">Donate Now</button>
+                      </form>
                         </div>
                             
                             
@@ -127,31 +102,7 @@
                                 
                                 <input id="i" class=" input input-bordered placeholder:font-medium mt-[20px]" placeholder="Write Donation Amount" />
                                 <!-- <div class="btn bg-[#B4F461] text-center mt-[20px]"> -->
-                                  <button id="openModal" type="submit" class="px-4 py-2 text-white bg-[#B4F461] rounded donation-btn">Donate Now</button>
-  
-
-<!-- Put this part before </body> tag -->
-<!-- <input type="checkbox" id="my_modal_6" class="modal-toggle" />
-<div class="modal" role="dialog">
-  <div class="modal-box">
-    <h3 class="text-lg font-bold">Hello!</h3>
-    <p class="py-4">This modal works with a hidden checkbox!</p>
-    <div class="modal-action">
-      <label for="my_modal_6" class="btn">Close!</label>
-    </div>
-  </div>
-</div> -->
-
-                                        <!-- Modal -->
-                                        <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
-                                          <div class="modal-box">
-                                            <h2 class="font-bold text-lg">Popup Title</h2>
-                                            <p class="py-4">This popup will prevent interaction with the background until you close it.</p>
-                                            <div class="modal-action">
-                                              <button type="submit" class="btn btn-primary" onclick="closeModal()">Close</button>
-                                            </div>
-                                          </div>
-                                        </div>
+                                  <button id="openModal" type="submit" class="px-4 py-2 mx-auto w-1/4 text-white bg-[#B4F461] rounded donation-btn">Donate Now</button>
                                         
                              </form>
                             </div>
@@ -181,7 +132,7 @@
                                 
                                     <input id="i" class=" input input-bordered placeholder:font-medium mt-[20px]" placeholder="Write Donation Amount" />
                                     <!-- <div class="btn bg-[#B4F461] text-center mt-[20px]"> -->
-                                      <button id="openModal" type="submit" class="px-4 py-2 text-white bg-[#B4F461] rounded donation-btn">Donate Now</button>
+                                      <button id="openModal" type="submit" class="px-4 py-2 text-white bg-[#B4F461] rounded donation-btn mx-auto w-1/4">Donate Now</button>
                                     <!-- </div> -->
                              </form>
                             </div>
@@ -195,24 +146,7 @@
     <div id="history-part" class="hidden" >
         
     </div>
-
 </div>
-
-    <!-- <div id="pop-up" class="hidden p-6   bg-white fixed bottom-[180px] left-[500px]">
-        <h1>Congrates</h1>
-        <img src="assets/coin.png" alt="">
-        <p>You have donated for humankind</p>
-        <h2>
-         Successfully
-        </h2>
-        <button id="pop-up-close">
-         Close confirmation
-        </button>
-    </div> -->
-
-  
-    <!-- Open the modal using ID.showModal() method -->
-<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
 <dialog id="my_modal_1" class="modal">
   <div class="modal-box text-center  ">
     <h3 class="text-lg font-bold">Congrates!</h3>
@@ -233,15 +167,9 @@
 
 
       <script src="donate.js"></script>
-      <script src="pop-up-stop.js"></script>
       <script src="section-swip.js"></script>
 
-      <script>
-        // document.getElementById('jk').addEventListener('click',(e)=>{
-        // //    e.preventDefault()
-        //    e.target.parentNode.children[0].children[1].innerText=parseFloat(e.target.parentNode.children[3].value)+parseFloat(e.target.parentNode.children[0].children[1].innerText)+" BDT"
-        //    console.log(e.target.parentNode.children[3].value)
-        // })
-      </script>
+     
+      <script src="blog.js"></script>
 </body>
 </html>
