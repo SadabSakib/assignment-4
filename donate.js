@@ -25,13 +25,13 @@ for(const btn of btns){
 //     </div>
 //   </div>
 // </div>`
-openModalButton.addEventListener('click', () => {
-  modal.showModal();
-});
+// openModalButton.addEventListener('click', () => {
+//   modal.showModal();
+// });
 
-closeModalButton.addEventListener('click', () => {
-  modal.close();
-});
+// closeModalButton.addEventListener('click', () => {
+//   modal.close();
+// });
 
 
 
@@ -56,6 +56,8 @@ closeModalButton.addEventListener('click', () => {
       divContainer.classList.add("p-7")
       divContainer.appendChild(div)
       document.getElementById('history-part').appendChild(divContainer)
+      document.getElementById('my_modal_1').showModal()
+
     } else{
       alert('Invalid amount') 
     }
