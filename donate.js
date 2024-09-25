@@ -37,7 +37,7 @@ for(const btn of btns){
 
 
       e.target.parentNode.children[0].children[1].innerText=parseFloat(e.target.parentNode.children[3].value)+parseFloat(e.target.parentNode.children[0].children[1].innerText)+" BDT"
-      document.getElementById('available-amount').innerText=parseFloat(document.getElementById('available-amount').innerText)-parseFloat(e.target.parentNode.children[3].value)
+      document.getElementById('available-amount').innerText=parseFloat(document.getElementById('available-amount').innerText)-parseFloat(e.target.parentNode.children[3].value)+" BDT"
       const div=document.createElement('div')
       const htwo=document.createElement('h1')
       const paragraph=document.createElement('p')
